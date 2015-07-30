@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 母親節快樂！</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2786/%e6%af%8d%e8%a6%aa%e7%af%80%e5%bf%ab%e6%a8%82%ef%bc%81/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>母親節快樂！</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2786/%e6%af%8d%e8%a6%aa%e7%af%80%e5%bf%ab%e6%a8%82%ef%bc%81/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2786/%e6%af%8d%e8%a6%aa%e7%af%80%e5%bf%ab%e6%a8%82%ef%bc%81/#comments</comments>
+		<pubDate>Wed, 07 May 2014 01:27:21 +0000</pubDate>
+		<dc:creator><![CDATA[yctu]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=2786</guid>
+		<description><![CDATA[5月11日回家陪伴媽媽吃頓飯、話家常，就是送給媽媽最好的禮物。 張花冠縣長祝福全 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2786/%e6%af%8d%e8%a6%aa%e7%af%80%e5%bf%ab%e6%a8%82%ef%bc%81/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/05/201.jpg"><img src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/05/201.jpg" alt="201" width="511" height="362" class="alignnone size-full wp-image-2856" /></a></p>
+<p>5月11日回家陪伴媽媽吃頓飯、話家常，就是送給媽媽最好的禮物。<br/><br />
+張花冠縣長祝福全天下的媽媽，母親節快樂！</p>
+<p><a href="http://www.youtube.com/watch?v=lKwoG9iwWDE&amp;list=UUTmcnabYxY5qBZ5mmtljp8Q" target="_blank">母親節快樂CF</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2786/%e6%af%8d%e8%a6%aa%e7%af%80%e5%bf%ab%e6%a8%82%ef%bc%81/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

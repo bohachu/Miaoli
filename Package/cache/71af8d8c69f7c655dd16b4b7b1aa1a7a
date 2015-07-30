@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 幸福嘉義 第2集</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/1950/1950/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:39:57 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>幸福嘉義 第2集</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/1950/1950/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/1950/1950/#comments</comments>
+		<pubDate>Fri, 25 Apr 2014 02:33:24 +0000</pubDate>
+		<dc:creator><![CDATA[yctu]]></dc:creator>
+				<category><![CDATA[影音內容]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=1950</guid>
+		<description><![CDATA[幸福嘉義 第2集 本集介紹新港鄉、民雄鄉等施政成果]]></description>
+				<content:encoded><![CDATA[<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/23.jpg"><img src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/23.jpg" alt="2" width="511" height="293" class="alignnone size-full wp-image-1954" /></a></p>
+<p><a href="http://youtu.be/JnQioyVJCzU">幸福嘉義 第2集</a></p>
+<p>本集介紹新港鄉、民雄鄉等施政成果</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/1950/1950/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 幸福嘉義 縣政影片</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/1989/%e5%b9%b8%e7%a6%8f%e5%98%89%e7%be%a9-%e7%b8%a3%e6%94%bf%e5%bd%b1%e7%89%87/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:39:57 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>幸福嘉義 縣政影片</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/1989/%e5%b9%b8%e7%a6%8f%e5%98%89%e7%be%a9-%e7%b8%a3%e6%94%bf%e5%bd%b1%e7%89%87/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/1989/%e5%b9%b8%e7%a6%8f%e5%98%89%e7%be%a9-%e7%b8%a3%e6%94%bf%e5%bd%b1%e7%89%87/#comments</comments>
+		<pubDate>Fri, 25 Apr 2014 07:07:29 +0000</pubDate>
+		<dc:creator><![CDATA[yctu]]></dc:creator>
+				<category><![CDATA[影音內容]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=1989</guid>
+		<description><![CDATA[幸福嘉義 縣政影片]]></description>
+				<content:encoded><![CDATA[<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/6.jpg"><img class="alignnone size-full wp-image-1990" alt="6" src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/6.jpg" width="510" height="337" /></a></p>
+<p><a href="http://youtu.be/Dhydq8pBt2Q">幸福嘉義 縣政影片</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/1989/%e5%b9%b8%e7%a6%8f%e5%98%89%e7%be%a9-%e7%b8%a3%e6%94%bf%e5%bd%b1%e7%89%87/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

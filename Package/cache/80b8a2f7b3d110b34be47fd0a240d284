@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 新港香藝文化館5月份系列活動</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>新港香藝文化館5月份系列活動</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/#comments</comments>
+		<pubDate>Wed, 30 Apr 2014 02:15:24 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[活動看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/</guid>
+		<description><![CDATA[[時間]：2014/05/17-2014/05/18 13:30~14:30 ◆ &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/011.jpg"><img src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/011.jpg" alt="01" width="463" height="647" class="alignnone size-full wp-image-2256" /></a></p>
+<p>[時間]：2014/05/17-2014/05/18 13:30~14:30<br/><br />
+◆館舍名稱—活動名稱：新港香藝文化館 &#8211; 518立香花<br/><br />
+◆館址： 616嘉義縣新港鄉菜公村嘉北路23-6號<br/><br />
+◆聯絡電話：05-3747899<br/><br />
+活動內容介紹：<br/><br />
+5月端午立蛋不稀奇，5月立香才特別。歡迎17、18作伙來香藝立香~~<br/><br />
+立香，是一種傳統的曬香方法，聽起來簡單，做起來可不容易喔！<br />
+歡迎一起來挑戰，讓"百花齊綻，吉祥滿載"。<br/><br />
+立香說明：<br />
+利用手腕的技巧，讓一把香枝可以發散狀的開立於地面。<br/><br />
+2014-04-30</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2250/146468/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

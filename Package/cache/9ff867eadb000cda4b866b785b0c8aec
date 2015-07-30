@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 提供民眾免費法律諮詢服務</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>提供民眾免費法律諮詢服務</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/#comments</comments>
+		<pubDate>Tue, 06 May 2014 04:15:20 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[新聞看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/</guid>
+		<description><![CDATA[嘉義縣政府為服務本縣民眾，聘請知名執業律師擔任縣府法律顧問，提供免費法律諮詢服務 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>嘉義縣政府為服務本縣民眾，聘請知名執業律師擔任縣府法律顧問，提供免費法律諮詢服務。<br/><br />
+103年5月9日(星期五)下午2點30分至4點30分，排定在縣府及東石、鹿草、溪口、竹崎等公所，歡迎於法律諮詢服務時段內，前往上述地點洽詢。<br/><br />
+如有與諮詢相關公文書或資料，請一併備齊，以方便律師提供較周詳之解答。<br/><br />
+2014-05-06</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2762/146577/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 林黛羚主講 居家綠改造及綠生活實踐</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>林黛羚主講 居家綠改造及綠生活實踐</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/#comments</comments>
+		<pubDate>Wed, 30 Apr 2014 05:15:23 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[活動看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/</guid>
+		<description><![CDATA[[時間]：2014/05/14 13:20~16:40 [地點]：嘉義縣人力發展 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>[時間]：2014/05/14  13:20~16:40<br />
+[地點]：嘉義縣人力發展所<br />
+[地址]：嘉義縣太保市祥和二路東段8號<br />
+[電話]：05-3623279<br />
+[報名]：即日起至5月11日17時止，於嘉義縣人力發展所網站線上報名（請先註冊為會員）</p>
+<p>[簡介]：林黛羚，綽號阿羚，豐原人。記錄友善住居、工作場域及生活方式，並期許自己從記錄他人到實踐自己。喜歡散小步、喝小茶、旅小行、種小菜，希望將耕種當成喝茶一樣，成為日常生活的一部分。</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2267/146258/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

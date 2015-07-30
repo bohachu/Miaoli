@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 嘉義縣地政便民新措施</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2259/%e5%98%89%e7%be%a9%e7%b8%a3%e5%9c%b0%e6%94%bf%e4%be%bf%e6%b0%91%e6%96%b0%e6%8e%aa%e6%96%bd/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>嘉義縣地政便民新措施</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2259/%e5%98%89%e7%be%a9%e7%b8%a3%e5%9c%b0%e6%94%bf%e4%be%bf%e6%b0%91%e6%96%b0%e6%8e%aa%e6%96%bd/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2259/%e5%98%89%e7%be%a9%e7%b8%a3%e5%9c%b0%e6%94%bf%e4%be%bf%e6%b0%91%e6%96%b0%e6%8e%aa%e6%96%bd/#comments</comments>
+		<pubDate>Wed, 30 Apr 2014 05:01:38 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=2259</guid>
+		<description><![CDATA[嘉義縣各地政事務所自103年5月1日起開始受理跨所申辦簡易登記案件。 初步開放受 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2259/%e5%98%89%e7%be%a9%e7%b8%a3%e5%9c%b0%e6%94%bf%e4%be%bf%e6%b0%91%e6%96%b0%e6%8e%aa%e6%96%bd/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>嘉義縣各地政事務所自103年5月1日起開始受理跨所申辦簡易登記案件。<br/><br />
+初步開放受理項目包含「住址變更登記」、「門牌整編登記」、「更名登記（以戶籍資料記載姓名變更者為限）」、「更正登記（限姓名、出生年月日、身分證統一編號、地址、門牌錯誤經戶政機關更正有案者）」及「抵押權全部塗銷登記(抵押權人為金融機構者為限)」等5項。<br/><br />
+申請人申辦案件，從收件、收費、審查、登簿、校對、領件、歸檔、退費、駁回、訴願及申請原登記申請案件與附件影本等均由受理所辦理。<br/></p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2259/%e5%98%89%e7%be%a9%e7%b8%a3%e5%9c%b0%e6%94%bf%e4%be%bf%e6%b0%91%e6%96%b0%e6%8e%aa%e6%96%bd/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

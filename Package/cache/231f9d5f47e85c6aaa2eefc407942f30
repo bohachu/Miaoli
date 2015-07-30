@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 2014布袋龍舟賽開始報名</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:39:57 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>2014布袋龍舟賽開始報名</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/#comments</comments>
+		<pubDate>Tue, 22 Apr 2014 08:15:24 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[新聞看板]]></category>
+		<category><![CDATA[活動看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/</guid>
+		<description><![CDATA[[時間]：2014/04/22起開始報名至5/14中午止 [活動日期]：2014 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>[時間]：2014/04/22起開始報名至5/14中午止<br/><br />
+[活動日期]：2014/05/31<br/><br />
+[地點]：布袋遊艇港<br/><br />
+[地址]：嘉義縣布袋鎮順安路168號<br/><br />
+[報名方式]：請於5/14中午前至布袋國小網站(http://www.ptes.cyc.edu.tw)下載報名表，填妥後E-Mail至布袋國小公務信箱(ptes@mail.cyc.edu.tw) ，再電話確認(05-3472007翁主任或蘇老師)<br/><br />
+[洽詢]：05-3472007翁主任或蘇老師<br/><br />
+[簡介]：本次龍舟競賽分大型龍舟男子公開組（由社會、大專、高中男子組隊參加）、小型龍舟國中男子組、小型龍舟國中女子組及小型龍舟男女混合組（由男女混合組隊參加）等四組進行。事先報名且完整參加所有正規賽事者的隊伍，給予參賽補助(大型8,000元，小型5,000元)之外，當日各組前4名分別頒發5,000元至40,000元不等的高額獎金。<br/><br />
+2014-04-22</p>
+<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/31.jpg"><img class="alignnone size-full wp-image-1801" alt="3" src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/04/31.jpg" width="510" height="339" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/1795/146357/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

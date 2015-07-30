@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 溪口自行車環鄉活動</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2653/%e6%ba%aa%e5%8f%a3%e8%87%aa%e8%a1%8c%e8%bb%8a%e7%92%b0%e9%84%89%e6%b4%bb%e5%8b%95/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>溪口自行車環鄉活動</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2653/%e6%ba%aa%e5%8f%a3%e8%87%aa%e8%a1%8c%e8%bb%8a%e7%92%b0%e9%84%89%e6%b4%bb%e5%8b%95/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2653/%e6%ba%aa%e5%8f%a3%e8%87%aa%e8%a1%8c%e8%bb%8a%e7%92%b0%e9%84%89%e6%b4%bb%e5%8b%95/#comments</comments>
+		<pubDate>Thu, 01 May 2014 03:37:19 +0000</pubDate>
+		<dc:creator><![CDATA[yctu]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[活動看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=2653</guid>
+		<description><![CDATA[[時間]：2014/05/18(日) 上午 7:30 [地點]：溪口文化生活館集 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2653/%e6%ba%aa%e5%8f%a3%e8%87%aa%e8%a1%8c%e8%bb%8a%e7%92%b0%e9%84%89%e6%b4%bb%e5%8b%95/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p><a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/05/1978889_872964109385541_1361975789447857239_n.jpg"><img class="alignnone size-full wp-image-2654" alt="1978889_872964109385541_1361975789447857239_n" src="http://chiayiapp.cyhg.gov.tw/chiayiapp/wp-content/uploads/2014/05/1978889_872964109385541_1361975789447857239_n.jpg" width="511" height="293" /></a></p>
+<p>[時間]：2014/05/18(日) 上午 7:30<br />
+[地點]：溪口文化生活館集合出發<br />
+[地址]：嘉義縣溪口鄉溪北村中山路55號<br />
+[路線]：溪口鄉文化生活A→開元殿B→竹編體驗(美南村)C→中繼站(本厝村保生大帝廟)D→麵線體驗(本厝村)E→劉氏古厝巡禮(妙崙村)F→客家館G→探索愛溪口的秘密通道H→溪口鄉文化生活館 (午餐…割稻飯→影片欣賞→DIY體驗)→活動結束(賦歸)<br />
+[報名]：報名至5/10 限額150名，<a href="http://sikou.cyhg.gov.tw/culture/application.asp">驚豔溪口綠色遊鄉</a><br />
+[洽詢]：溪口文化生活館 05-2696962徐先生<br />
+[內容：]自行車環鄉途中, 有竹編體驗+麵線體驗, 中午來吃古早味割稻飯~ 與大地輕鬆自然的對話, 體驗溪口鄉這個大型農村博物館的美與活力!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2653/%e6%ba%aa%e5%8f%a3%e8%87%aa%e8%a1%8c%e8%bb%8a%e7%92%b0%e9%84%89%e6%b4%bb%e5%8b%95/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

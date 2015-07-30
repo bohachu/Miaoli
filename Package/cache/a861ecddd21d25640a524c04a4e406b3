@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 朴子地區幼兒繪畫聯展</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2640/%e6%9c%b4%e5%ad%90%e5%9c%b0%e5%8d%80%e5%b9%bc%e5%85%92%e7%b9%aa%e7%95%ab%e8%81%af%e5%b1%95/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>朴子地區幼兒繪畫聯展</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2640/%e6%9c%b4%e5%ad%90%e5%9c%b0%e5%8d%80%e5%b9%bc%e5%85%92%e7%b9%aa%e7%95%ab%e8%81%af%e5%b1%95/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2640/%e6%9c%b4%e5%ad%90%e5%9c%b0%e5%8d%80%e5%b9%bc%e5%85%92%e7%b9%aa%e7%95%ab%e8%81%af%e5%b1%95/#comments</comments>
+		<pubDate>Thu, 01 May 2014 00:48:02 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+		<category><![CDATA[活動看板]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=2640</guid>
+		<description><![CDATA[[時間]：2014/04/29~2014/05/25 上午09:00~下午17: &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2640/%e6%9c%b4%e5%ad%90%e5%9c%b0%e5%8d%80%e5%b9%bc%e5%85%92%e7%b9%aa%e7%95%ab%e8%81%af%e5%b1%95/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>[時間]：2014/04/29~2014/05/25 上午09:00~下午17:00<br />
+[地點]：梅嶺美術館<br />
+[地址]：嘉義縣朴子市山通路2之9號<br />
+[電話]：05-3795667<br />
+[簡介]：啟發兒童美術創作能力與興趣，讓美術教育落實紮根，讓地區幼兒教育單位展現美術教育成果，相互觀摩學習，並提供幼兒美術才藝發表平台。<br/><br />
+本次徵集朴子地區高明幼兒園、東明幼兒園、藍天幼兒園、曉明幼兒園等多所學校共同辦理，歡迎爸爸媽媽帶領小朋友一起體驗兒童異想世界。</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2640/%e6%9c%b4%e5%ad%90%e5%9c%b0%e5%8d%80%e5%b9%bc%e5%85%92%e7%b9%aa%e7%95%ab%e8%81%af%e5%b1%95/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

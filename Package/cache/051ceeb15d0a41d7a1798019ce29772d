@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>嘉義田園 &#187; 琴聲傳愛 琴繫嘉鄉</title>
+	<atom:link href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2735/%e7%90%b4%e8%81%b2%e5%82%b3%e6%84%9b-%e7%90%b4%e7%b9%ab%e5%98%89%e9%84%89/feed/?withoutcomments=1" rel="self" type="application/rss+xml" />
+	<link>http://chiayiapp.cyhg.gov.tw/chiayiapp</link>
+	<description></description>
+	<lastBuildDate>Thu, 08 May 2014 08:15:24 +0000</lastBuildDate>
+	<language>zh-TW</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.7.3</generator>
+	<item>
+		<title>琴聲傳愛 琴繫嘉鄉</title>
+		<link>http://chiayiapp.cyhg.gov.tw/chiayiapp/2735/%e7%90%b4%e8%81%b2%e5%82%b3%e6%84%9b-%e7%90%b4%e7%b9%ab%e5%98%89%e9%84%89/</link>
+		<comments>http://chiayiapp.cyhg.gov.tw/chiayiapp/2735/%e7%90%b4%e8%81%b2%e5%82%b3%e6%84%9b-%e7%90%b4%e7%b9%ab%e5%98%89%e9%84%89/#comments</comments>
+		<pubDate>Mon, 05 May 2014 04:03:15 +0000</pubDate>
+		<dc:creator><![CDATA[cameoroy]]></dc:creator>
+				<category><![CDATA[好康報你知]]></category>
+
+		<guid isPermaLink="false">http://chiayiapp.cyhg.gov.tw/chiayiapp/?p=2735</guid>
+		<description><![CDATA[鋼琴捐贈典禮，樹立了企業家返鄉回饋鄉里的典範。 生長於布袋鎮的企業家～溪頭米堤大 &#8230; <a href="http://chiayiapp.cyhg.gov.tw/chiayiapp/2735/%e7%90%b4%e8%81%b2%e5%82%b3%e6%84%9b-%e7%90%b4%e7%b9%ab%e5%98%89%e9%84%89/">繼續閱讀 <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>鋼琴捐贈典禮，樹立了企業家返鄉回饋鄉里的典範。<br/><br />
+生長於布袋鎮的企業家～溪頭米堤大飯店李麗裕總經理，長期贊助本縣學校資源；主動表達關切及捐琴意願，透過縣府媒合有需求的學校，促成了捐贈鋼琴的活動。<br/><br />
+本次捐贈對象有過溝國中等14校，103年5月7日（星期三）上午10點於過溝國中禮堂舉行受贈儀式，由縣長張花冠代表嘉義縣政府感謝李總經理長期對本縣教育的奉獻，受贈學校校長亦一併出席，並回贈溫馨感謝卡。<br/><br />
+2014-05-05</p>
+]]></content:encoded>
+			<wfw:commentRss>http://chiayiapp.cyhg.gov.tw/chiayiapp/2735/%e7%90%b4%e8%81%b2%e5%82%b3%e6%84%9b-%e7%90%b4%e7%b9%ab%e5%98%89%e9%84%89/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
