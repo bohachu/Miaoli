@@ -1,4 +1,3 @@
-.ipa
-.apk
-.swf
-
+*.ipa
+*.apk
+*.swf
