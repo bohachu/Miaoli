@@ -61,21 +61,28 @@
 	import flash.net.URLLoader;
 	import flash.net.URLLoaderDataFormat;
 	import flash.net.URLRequest;
-	CAMEO::Android {
-		import tw.cameo.pushnotification.PushNotification;
-	}
+//	CAMEO::Android {
+//		import tw.cameo.pushnotification.PushNotification;
+//	}
 	
 	public class Main extends MovieClip {
 		
+		/* 20150809 roy updated : change the feed URL
 		static public const FEED_URL_INFO:String = "cat/%E5%A5%BD%E5%BA%B7%E5%A0%B1%E4%BD%A0%E7%9F%A5/feed/";
 		static public const FEED_URL_NEWS:String = "cat/%E6%96%B0%E8%81%9E%E7%9C%8B%E6%9D%BF/feed/";
 		static public const FEED_URL_ACT:String = "cat/%E6%B4%BB%E5%8B%95%E7%9C%8B%E6%9D%BF/feed/";
 		static public const FEED_URL_VIDEO:String = "cat/%E5%BD%B1%E9%9F%B3%E5%85%A7%E5%AE%B9/feed/";
-		
+		*/
+		static public const FEED_URL_INFO:String = "category/%E8%82%B2%E9%81%94%E6%B0%91%E5%AE%BFapp-2/%E8%82%B2%E9%81%94%E6%B0%91%E5%AE%BFapp/feed/";
+		//static public const FEED_URL_NEWS:String = "category/育達民宿app-2/育達民宿app/feed/";
+		//static public const FEED_URL_ACT:String = "category/育達民宿app-2/育達民宿app/feed/";
+		//static public const FEED_URL_VIDEO:String = "category/育達民宿app-2/育達民宿app/feed/";
+
+
 		static public const CACHE_INFO:String = "INFO";
-		static public const CACHE_NEWS:String = "NEWS";
-		static public const CACHE_ACT:String = "ACT";
-		static public const CACHE_VIDEO:String = "VIDEO";
+		//static public const CACHE_NEWS:String = "NEWS";
+		//static public const CACHE_ACT:String = "ACT";
+		//static public const CACHE_VIDEO:String = "VIDEO";
 		
 		private var sharedObject:SharedObject = null;;
 		private var eventChannel:EventChannel = EventChannel.getInstance();
@@ -134,10 +141,10 @@
 			}
 
 			// add by mark
-			CAMEO::Android {
-				var pushNotification : PushNotification = new PushNotification();
-				pushNotification.registerDevice("120057183953", CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX);
-			}
+			//20150809 roy updated// CAMEO::Android {
+				//20150809 roy updated// var pushNotification : PushNotification = new PushNotification();
+				//20150809 roy updated// pushNotification.registerDevice("120057183953", CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX);
+			//20150809 roy updated// }
 
 			// add by mark
 			NativeApplication.nativeApplication.addEventListener(KeyboardEvent.KEY_DOWN, keyDownEevnt);
@@ -176,9 +183,9 @@
 			_backgroundLoader.strURLUpdateCheck = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "isUpdated.php";
 			
 			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_INFO);
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
 			
 			_backgroundLoader.start();
 			
@@ -199,13 +206,13 @@
 			//Roy 20140410: 第一次與每次切開APP時檢查好康報你知是否有新資料
 			_isChecking = false;
 			checkIsUpdated();
-			checkIsUnreadArticle(); //20140601 roy added
+			//20150809 roy updated// checkIsUnreadArticle(); //20140601 roy added
 			
 			
 //			//20140905 added by roy
 //			checkIsUpdated_news();
 			//20140905 added by roy
-			checkIsUpdated_activity();
+			//20150809 roy updated// checkIsUpdated_activity();
 			//Roy 20140516: 每次切開APP時檢查是否有新資料
 			
 			if (_backgroundLoader) return;
@@ -216,12 +223,12 @@
 				_backgroundLoader = null;
 			}
 			*/
-			_backgroundLoader = new BackgroundURLLoader();
-			_backgroundLoader.strURLUpdateCheck = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "isUpdated.php";
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
-			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
-			_backgroundLoader.start();
+			//20150809 roy updated// _backgroundLoader = new BackgroundURLLoader();
+			//20150809 roy updated// _backgroundLoader.strURLUpdateCheck = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "isUpdated.php";
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
+			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
+			//20150809 roy updated// _backgroundLoader.start();
 		}
 		
 		private function eventChannelAddEventListener() {
@@ -278,7 +285,8 @@
 		}
 		
 		private function createHome() {
-			onHomeActivityClick();
+			
+			onHomeActivityClick();  //20150810 bigcookie added
 			System.gc();
 		}
 		
@@ -316,70 +324,72 @@
 		
 		//20140905 added by roy
 		private function checkIsUpdated_news() {
-			if (_isCheckingNews) return; 
-			_isCheckingNews = true;
-			
-			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
-            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
-			
-			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
-			
-                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
-				{
-					event.target.removeEventListener(event.type, arguments.callee);
-					var fileCache : FileCache = FileCache(event.target);
-					// 若是存在更新版本, 則進行下載, 否則使用 cache
-            		if (fileCache.isUpdated)
-					{
-						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
-						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
-						fileCache.download();
-						_isCheckingNews = false;
-					}
-				});
-				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
-				{
-						_isCheckingNews = false;
-				});
-                fileCacheFeed.checkIsUpdated();
+//20150809 roy updated// 			
+//			if (_isCheckingNews) return; 
+//			_isCheckingNews = true;
+//			
+//			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
+//            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
+//			
+//			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
+//			
+//                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
+//				{
+//					event.target.removeEventListener(event.type, arguments.callee);
+//					var fileCache : FileCache = FileCache(event.target);
+//					// 若是存在更新版本, 則進行下載, 否則使用 cache
+//            		if (fileCache.isUpdated)
+//					{
+//						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
+//						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
+//						fileCache.download();
+//						_isCheckingNews = false;
+//					}
+//				});
+//				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
+//				{
+//						_isCheckingNews = false;
+//				});
+//                fileCacheFeed.checkIsUpdated();
 				
 		}		
 		
 		//20140905 added by roy
 		private function checkIsUpdated_activity() {
-			if (_isCheckingAct) return; 
-			_isCheckingAct = true;
-			
-			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
-            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
-			
-			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
-			
-                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
-				{
-					event.target.removeEventListener(event.type, arguments.callee);
-					var fileCache : FileCache = FileCache(event.target);
-					// 若是存在更新版本, 則進行下載, 否則使用 cache
-            		if (fileCache.isUpdated)
-					{
-						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
-						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
-						fileCache.download();
-						_isCheckingAct = false;
-					}
-				});
-				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
-				{
-						_isCheckingAct = false;
-				});
-                fileCacheFeed.checkIsUpdated();
+//20150809 roy updated// 			
+//			if (_isCheckingAct) return; 
+//			_isCheckingAct = true;
+//			
+//			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
+//            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
+//			
+//			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
+//			
+//                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
+//				{
+//					event.target.removeEventListener(event.type, arguments.callee);
+//					var fileCache : FileCache = FileCache(event.target);
+//					// 若是存在更新版本, 則進行下載, 否則使用 cache
+//            		if (fileCache.isUpdated)
+//					{
+//						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
+//						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
+//						fileCache.download();
+//						_isCheckingAct = false;
+//					}
+//				});
+//				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
+//				{
+//						_isCheckingAct = false;
+//				});
+//                fileCacheFeed.checkIsUpdated();
 				
 		}				
 		
 		private function checkIsUnreadArticle() {
-				checkUnreadArticle(CACHE_NEWS); 
-				checkUnreadArticle(CACHE_ACT); 
-				checkUnreadArticle(CACHE_VIDEO); 
+				//20150809 roy updated// checkUnreadArticle(CACHE_NEWS); 
+				//20150809 roy updated// checkUnreadArticle(CACHE_ACT); 
+				//20150809 roy updated// checkUnreadArticle(CACHE_VIDEO); 
 		}
 		
 		private function fileCacheOnDownloadDone(event : Event) : void
@@ -413,9 +423,9 @@
 //			}
 			
 			//addHomeNewInfoIcon(strIconNameIn);
-			if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = true;
-			if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = true;
-			if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = true;
+			//20150809 roy updated// if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = true;
+			//20150809 roy updated// if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = true;
+			//20150809 roy updated// if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = true;
 		}
 		
 //		//20140516 add by roy
@@ -452,32 +462,33 @@
 		
 		//20140516 add by roy
 		private function saveLastArticleDate(strIconNameIn:String) {
-			if(sharedObject==null) sharedObject = SharedObject.getLocal("ChiayiReadLog");
-			
-			var strURLFeedCache : String = "";
-			var fileCacheFeedCheck : FileCache = null;
-			if(strIconNameIn == CACHE_NEWS){
-				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
-			}
-			if(strIconNameIn == CACHE_ACT){
-				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
-			}
-			if(strIconNameIn == CACHE_VIDEO){
-				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO
-			}
-			
-			if(strURLFeedCache==""){
-				trace("saveLastArticleDate empty strURLFeedCache");	
-				return;
-			}
-            fileCacheFeedCheck = new FileCache(strURLFeedCache, true);
-			sharedObject.data[strIconNameIn] = getDateArticleFirst(fileCacheFeedCheck).toString();
-			sharedObject.flush();
-			
-			
-			if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = false;
-			if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = false;
-			if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = false;
+//20150809 roy updated// 			
+//			if(sharedObject==null) sharedObject = SharedObject.getLocal("ChiayiReadLog");
+//			
+//			var strURLFeedCache : String = "";
+//			var fileCacheFeedCheck : FileCache = null;
+//			if(strIconNameIn == CACHE_NEWS){
+//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
+//			}
+//			if(strIconNameIn == CACHE_ACT){
+//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
+//			}
+//			if(strIconNameIn == CACHE_VIDEO){
+//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO
+//			}
+//			
+//			if(strURLFeedCache==""){
+//				trace("saveLastArticleDate empty strURLFeedCache");	
+//				return;
+//			}
+//            fileCacheFeedCheck = new FileCache(strURLFeedCache, true);
+//			sharedObject.data[strIconNameIn] = getDateArticleFirst(fileCacheFeedCheck).toString();
+//			sharedObject.flush();
+//			
+//			
+//			if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = false;
+//			if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = false;
+//			if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = false;
 			
 			//trace("getDateArticleFirst save: ", getDateArticleFirst(fileCacheFeed));
 		}

@@ -164,7 +164,17 @@
   	        	xmlContent = new XML("<content>" + strContent.replace(strPattern, "") + "</content>");
 			}
 			else{
+				//20150810 roy updated
+				try
+				{
             	xmlContent = new XML("<content>" + data[0].content + "</content>");
+				}
+				catch (error : Error)
+						{
+							trace(error.message);
+							xmlContent = new XML("<content>" + "" + "</content>");
+						}				
+				
 			}
 			
             var intCount : Number = xmlContent.p.length();

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<application xmlns="http://ns.adobe.com/air/application/17.0">
+<application xmlns="http://ns.adobe.com/air/application/3.7">
   <id>tw.cameo.Miaoli</id>
   <versionNumber>0.1.0</versionNumber>
   <filename>喲！苗栗</filename>
@@ -33,4 +33,11 @@
 </manifest>]]>
     </manifestAdditions>
   </android>
+  <extensions>
+    <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
+    <extensionID>tw.cameo.pushnotification</extensionID>
+    <extensionID>com.cameo.flash2videoext</extensionID>
+    <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
+    <extensionID>tw.cameo.imagehandler</extensionID>
+  </extensions>
 </application>
