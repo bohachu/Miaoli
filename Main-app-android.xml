@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<application xmlns="http://ns.adobe.com/air/application/17.0">
+  <id>tw.cameo.Miaoli</id>
+  <versionNumber>1.0.0</versionNumber>
+  <filename>喲！苗栗</filename>
+  <description/>
+<!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
+  <name>喲！苗栗</name>
+<!-- To localize the name, use the following format for the name element.<name><text xml:lang="en">English App name goes here</text><text xml:lang="fr">French App name goes here</text><text xml:lang="ja">Japanese App name goes here</text></name>-->
+  <copyright/>
+  <initialWindow>
+    <content>Main.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <fullScreen>true</fullScreen>
+    <aspectRatio>portrait</aspectRatio>
+    <renderMode>gpu</renderMode>
+    <autoOrients>false</autoOrients></initialWindow>
+    <icon>
+    <image72x72>icons/icon_android_72x72.png</image72x72>
+    <image96x96>icons/icon_android_96x96.png</image96x96>
+    <image144x144>icons/icon_android_144x144.png</image144x144>
+  </icon>
+  <customUpdateUI>false</customUpdateUI>
+  <allowBrowserInvocation>false</allowBrowserInvocation>
+    <android>
+        <manifestAdditions>
+      <![CDATA[<manifest>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-feature android:name="android.hardware.camera" android:required="false"/>
+<uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+<permission android:name="com.example.gcm.permission.C2D_MESSAGE"
+	android:protectionLevel="signature" />
+<uses-permission android:name="com.example.gcm.permission.C2D_MESSAGE" />
+<application>
+<activity android:name="com.cameo.flash2video.lib.CameraActivity"/>
+<activity android:name="com.cameo.flash2video.lib.VideoViewActivity"/>
+	<receiver
+		android:name="tw.cameo.pushnotification.GcmBroadcastReceiver"
+		android:permission="com.google.android.c2dm.permission.SEND" >
+		<intent-filter>
+			<action android:name="com.google.android.c2dm.intent.RECEIVE" />
+			<category android:name="air.tw.cameo.ChiaYi" />
+		</intent-filter>
+	</receiver>
+	<service android:name="tw.cameo.pushnotification.GcmIntentService" />
+	<meta-data android:name="com.google.android.gms.version" android:value="4030500" />
+</application>
+<uses-sdk android:minSdkVersion="9" />
+</manifest>]]>
+    </manifestAdditions>
+    </android>
+  <extensions>
+    <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
+    <extensionID>com.cameo.flash2videoext</extensionID>
+  </extensions>
+</application>

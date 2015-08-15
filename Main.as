@@ -816,14 +816,8 @@ catch (error : Error)
 				className: "tw.cameo.UI.PageCalendar",
 				data: strURLFeed,
 				title: strTitle,
-				leftButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_BACK,
-				leftButtonOnMouseClick:function() : void
-				{
-					intArrayIndexSelected.length = 0; //Clear Array
-					if(strViewModeIn == "LIST_VIEW" || strViewModeIn == "CALENDAR_VIEW") titleButtonHomeHandler();  //201400422 roy
-					else titleButtonBackHandler();
-					//((strViewModeIn == "LIST_VIEW") ? (titleButtonHomeHandler()) : (titleButtonBackHandler()));  //201400422 roy
-				},
+				leftButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_NONE,
+				leftButtonOnMouseClick:null,
 				//20150815 roy update: 苗栗版不顯示行事曆按鈕
 				rightButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_NONE,
 				rightButtonOnMouseClick: null,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <application xmlns="http://ns.adobe.com/air/application/17.0">
   <id>tw.cameo.Miaoli</id>
-  <versionNumber>0.1.0</versionNumber>
+  <versionNumber>1.0.0</versionNumber>
   <filename>喲！苗栗</filename>
   <description/>
 <!-- To localize the description, use the following format for the description element.<description><text xml:lang="en">English App description goes here</text><text xml:lang="fr">French App description goes here</text><text xml:lang="ja">Japanese App description goes here</text></description>-->
@@ -17,24 +17,25 @@
     <aspectRatio>portrait</aspectRatio>
     <renderMode>gpu</renderMode>
     <autoOrients>false</autoOrients></initialWindow>
-  <icon/>
+  <icon>
+    <image57x57>icons/icon_ios_57x57.png</image57x57>
+    <image72x72>icons/icon_ios_72x72.png</image72x72>
+    <image76x76>icons/icon_ios_76x76.png</image76x76>
+    <image114x114>icons/icon_ios_114x114.png</image114x114>
+    <image120x120>icons/icon_ios_120x120.png</image120x120>
+    <image152x152>icons/icon_ios_152x152.png</image152x152>
+    <image512x512>icons/icon_ios_512x512.png</image512x512>
+  </icon>
   <customUpdateUI>false</customUpdateUI>
   <allowBrowserInvocation>false</allowBrowserInvocation>
   <iPhone>
     <InfoAdditions>
-      <![CDATA[<key>UIDeviceFamily</key><array><string>1</string><string>2</string></array>]]>
+<![CDATA[<key>UIDeviceFamily</key><array><string>1</string></array><key>UIRequiredDeviceCapabilities</key><dict><key>front-facing-camera</key><true/><key>still-camera</key><true/></dict><key>MinimumOSVersion</key><string>6.0</string>]]>
     </InfoAdditions>
     <requestedDisplayResolution>high</requestedDisplayResolution>
   </iPhone>
-  <versionLabel>1</versionLabel>
-  <android>
-    <manifestAdditions>
-      <![CDATA[<manifest>
-</manifest>]]>
-    </manifestAdditions>
-  </android>
   <extensions>
     <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
-    <extensionID>com.cameo.flash2videoext</extensionID>
+    <extensionID>tw.cameo.lib.CameoNativeExtension</extensionID>
   </extensions>
 </application>
