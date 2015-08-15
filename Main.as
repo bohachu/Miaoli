@@ -67,17 +67,7 @@
 	
 	public class Main extends MovieClip {
 		
-		/* 20150809 roy updated : change the feed URL
-		static public const FEED_URL_INFO:String = "cat/%E5%A5%BD%E5%BA%B7%E5%A0%B1%E4%BD%A0%E7%9F%A5/feed/";
-		static public const FEED_URL_NEWS:String = "cat/%E6%96%B0%E8%81%9E%E7%9C%8B%E6%9D%BF/feed/";
-		static public const FEED_URL_ACT:String = "cat/%E6%B4%BB%E5%8B%95%E7%9C%8B%E6%9D%BF/feed/";
-		static public const FEED_URL_VIDEO:String = "cat/%E5%BD%B1%E9%9F%B3%E5%85%A7%E5%AE%B9/feed/";
-		*/
-		static public const FEED_URL_INFO:String = "category/%E8%82%B2%E9%81%94%E6%B0%91%E5%AE%BFapp-2/%E8%82%B2%E9%81%94%E6%B0%91%E5%AE%BFapp/feed/";
-		//static public const FEED_URL_NEWS:String = "category/育達民宿app-2/育達民宿app/feed/";
-		//static public const FEED_URL_ACT:String = "category/育達民宿app-2/育達民宿app/feed/";
-		//static public const FEED_URL_VIDEO:String = "category/育達民宿app-2/育達民宿app/feed/";
-
+		static public const FEED_URL_INFO:String = "feed/";
 
 		static public const CACHE_INFO:String = "INFO";
 		//static public const CACHE_NEWS:String = "NEWS";
@@ -183,9 +173,6 @@
 			_backgroundLoader.strURLUpdateCheck = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "isUpdated.php";
 			
 			_backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_INFO);
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
 			
 			_backgroundLoader.start();
 			
@@ -206,29 +193,6 @@
 			//Roy 20140410: 第一次與每次切開APP時檢查好康報你知是否有新資料
 			_isChecking = false;
 			checkIsUpdated();
-			//20150809 roy updated// checkIsUnreadArticle(); //20140601 roy added
-			
-			
-//			//20140905 added by roy
-//			checkIsUpdated_news();
-			//20140905 added by roy
-			//20150809 roy updated// checkIsUpdated_activity();
-			//Roy 20140516: 每次切開APP時檢查是否有新資料
-			
-			if (_backgroundLoader) return;
-			/*
-			if (_backgroundLoader)
-			{
-				_backgroundLoader.stop();
-				_backgroundLoader = null;
-			}
-			*/
-			//20150809 roy updated// _backgroundLoader = new BackgroundURLLoader();
-			//20150809 roy updated// _backgroundLoader.strURLUpdateCheck = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "isUpdated.php";
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS);
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT);
-			//20150809 roy updated// _backgroundLoader.enqueue(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO);
-			//20150809 roy updated// _backgroundLoader.start();
 		}
 		
 		private function eventChannelAddEventListener() {
@@ -273,8 +237,6 @@
 			checkInternetStatus();
 			//Roy 20140410: 第一次與每次切開APP時檢查好康報你知是否有新資料
 			checkIsUpdated();
-			
-			checkIsUnreadArticle(); //20140601 roy added
 		}
 		
 		private function removeSplashScreen() {
@@ -308,7 +270,6 @@
 					// 若是存在更新版本, 則進行下載, 否則使用 cache
             		if (fileCache.isUpdated)
 					{
-						//addHomeNewInfoIcon(); //20140505 Roy added  //20140407 roy update: 現在不顯示 N 改顯示數字
 						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
 						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
 						//20140422 Roy: 有新資料時在這裡就直接下載
@@ -322,76 +283,7 @@
                 fileCacheFeed.checkIsUpdated();
 		}
 		
-		//20140905 added by roy
-		private function checkIsUpdated_news() {
-//20150809 roy updated// 			
-//			if (_isCheckingNews) return; 
-//			_isCheckingNews = true;
-//			
-//			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
-//            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
-//			
-//			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
-//			
-//                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
-//				{
-//					event.target.removeEventListener(event.type, arguments.callee);
-//					var fileCache : FileCache = FileCache(event.target);
-//					// 若是存在更新版本, 則進行下載, 否則使用 cache
-//            		if (fileCache.isUpdated)
-//					{
-//						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
-//						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
-//						fileCache.download();
-//						_isCheckingNews = false;
-//					}
-//				});
-//				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
-//				{
-//						_isCheckingNews = false;
-//				});
-//                fileCacheFeed.checkIsUpdated();
-				
-		}		
-		
-		//20140905 added by roy
-		private function checkIsUpdated_activity() {
-//20150809 roy updated// 			
-//			if (_isCheckingAct) return; 
-//			_isCheckingAct = true;
-//			
-//			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
-//            var fileCacheFeed : FileCache = new FileCache(strURLFeed, true);
-//			
-//			trace("getDateArticleFirst: ", getDateArticleFirst(fileCacheFeed));
-//			
-//                fileCacheFeed.addEventListener(FileCache.CHECK_IS_UPDATED_DONE, function(event : Event) : void
-//				{
-//					event.target.removeEventListener(event.type, arguments.callee);
-//					var fileCache : FileCache = FileCache(event.target);
-//					// 若是存在更新版本, 則進行下載, 否則使用 cache
-//            		if (fileCache.isUpdated)
-//					{
-//						fileCache.addEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
-//						fileCache.addEventListener(FileCache.DOWNLOAD_FAIL, fileCacheOnDownloadFail);
-//						fileCache.download();
-//						_isCheckingAct = false;
-//					}
-//				});
-//				fileCacheFeed.addEventListener(FileCache.DOWNLOAD_FAIL, function(event : Event) : void
-//				{
-//						_isCheckingAct = false;
-//				});
-//                fileCacheFeed.checkIsUpdated();
-				
-		}				
-		
-		private function checkIsUnreadArticle() {
-				//20150809 roy updated// checkUnreadArticle(CACHE_NEWS); 
-				//20150809 roy updated// checkUnreadArticle(CACHE_ACT); 
-				//20150809 roy updated// checkUnreadArticle(CACHE_VIDEO); 
-		}
-		
+	
 		private function fileCacheOnDownloadDone(event : Event) : void
 		{
 			event.target.removeEventListener(FileCache.DOWNLOAD_DONE, fileCacheOnDownloadDone);
@@ -400,7 +292,6 @@
 			isShowUpdateIcon = true;
 			_isChecking = false;
 			
-//			addHomeNewInfoIconNumber();//20140505 Roy updated
 		}
 		
 		private function fileCacheOnDownloadFail(event : Event) : void
@@ -410,93 +301,14 @@
 
 			_isChecking = false;
 			
-//			addHomeNewInfoIconNumber();//20140505 Roy updated
 		}
 		
-
-		//20140516 add by roy
-		private function checkUnreadArticle(strIconNameIn:String) {
-			//20140531 Roy: 這一段仍有 Bug 會造成文章類別錯亂			
-//			if(!isHasUnreadArticle(strIconNameIn)){
-//				//removeHomeNewInfoIconOthers(strIconNameIn);
-//				return;
-//			}
-			
-			//addHomeNewInfoIcon(strIconNameIn);
-			//20150809 roy updated// if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = true;
-			//20150809 roy updated// if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = true;
-			//20150809 roy updated// if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = true;
-		}
-		
-//		//20140516 add by roy
-//		private function isHasUnreadArticle(strIconNameIn:String):Boolean {
-//			if(sharedObject==null) sharedObject = SharedObject.getLocal("ChiayiReadLog");
-//			
-//			if (!sharedObject.data.hasOwnProperty(strIconNameIn)){
-//				return true;
-//			}
-//			
-//			var dateLastRead : String = sharedObject.data[strIconNameIn];
-//			var strURLFeedCache : String = "";
-//			var fileCacheFeedCheck : FileCache = null;
-//			if(strIconNameIn == CACHE_NEWS){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
-//			}
-//			if(strIconNameIn == CACHE_ACT){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
-//			}
-//			if(strIconNameIn == CACHE_VIDEO){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO
-//			}
-//			
-//			if(strURLFeedCache=="") return false;
-//            fileCacheFeedCheck = new FileCache(strURLFeedCache, true);
-//			
-//			//trace("getDateArticleFirst check: ", getDateArticleFirst(fileCacheFeed));
-//			
-//			if(getDateArticleFirst(fileCacheFeedCheck).toString() != dateLastRead) return true;
-//			
-//			fileCacheFeedCheck = null;
-//			return false;
-//		}
-		
-		//20140516 add by roy
-		private function saveLastArticleDate(strIconNameIn:String) {
-//20150809 roy updated// 			
-//			if(sharedObject==null) sharedObject = SharedObject.getLocal("ChiayiReadLog");
-//			
-//			var strURLFeedCache : String = "";
-//			var fileCacheFeedCheck : FileCache = null;
-//			if(strIconNameIn == CACHE_NEWS){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_NEWS;
-//			}
-//			if(strIconNameIn == CACHE_ACT){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_ACT;
-//			}
-//			if(strIconNameIn == CACHE_VIDEO){
-//				strURLFeedCache = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO
-//			}
-//			
-//			if(strURLFeedCache==""){
-//				trace("saveLastArticleDate empty strURLFeedCache");	
-//				return;
-//			}
-//            fileCacheFeedCheck = new FileCache(strURLFeedCache, true);
-//			sharedObject.data[strIconNameIn] = getDateArticleFirst(fileCacheFeedCheck).toString();
-//			sharedObject.flush();
-//			
-//			
-//			if(strIconNameIn==CACHE_NEWS) isShowUpdateIconNews = false;
-//			if(strIconNameIn==CACHE_ACT) isShowUpdateIconAct = false;
-//			if(strIconNameIn==CACHE_VIDEO) isShowUpdateIconVideo = false;
-			
-			//trace("getDateArticleFirst save: ", getDateArticleFirst(fileCacheFeed));
-		}
 		
 		private function onHomeActivityClick(event : Event = null) : void
 		{
 			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_INFO;
-			var dicContentParameter = createDicContentParameterForPageArticleList("喲！苗栗", strURLFeed);
+			var dicContentParameter = createDicContentParameterForPageCalendar("喲！苗栗", strURLFeed);
+			//var dicContentParameter = createDicContentParameterForPageArticleList("喲！苗栗", strURLFeed);
 			
 			setupNavigator(dicContentParameter);
 		}
@@ -918,118 +730,7 @@ catch (error : Error)
 		{
 			return (LayoutManager.intScreenWidth * intLength / 640);
 		}
-		
-//		private function onHomeVideoClick(event : Event) : void
-//		{
-//			
-//			//20140516 add by roy
-//			saveLastArticleDate(CACHE_VIDEO);
-//			
-//			removeHome();
-//
-//			var fileCache1 : FileCache = 
-//				new FileCache(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "images/background_page_subject_view.png");
-//			var fileCache2 : FileCache = 
-//				new FileCache(CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + "images/background_item_subject_view.png");
-//			
-//			var strURLFeed : String = CONFIG::WEB_SERVER_URL + CONFIG::WEB_PATH_PREFIX + FEED_URL_VIDEO;
-//			var strTitle : String = "影音內容";
-//			CAMEO::ANE {
-//				var dicContentParameter = {
-//					className: "tw.cameo.UI.PageSubjectView",
-//					data: strURLFeed,
-//					title: strTitle,
-//					leftButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_BACK,
-//					leftButtonOnMouseClick: titleButtonHomeHandler,
-//					rightButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_NONE,
-//					rightButtonOnMouseClick: null,
-//					lstStrSideMenuItem: null,
-//					intIndexDefaultSideMenuItem: -1,
-//					sideMenuOnClose: null,
-//					contentOnLoaded: function(content : MovieClip) : void
-//					{
-//						// Show Loading Indicator
-//						var loadingIndicator : LoadingIndicator = null;
-//							loadingIndicator = new LoadingIndicator(0xffffff);
-//							loadingIndicator.x = stage.fullScreenWidth / 5;
-//							loadingIndicator.y = navigator.getTitleBarHeight() / 2;
-//							loadingIndicator.scaleX = LayoutManager.intScaleX;
-//							loadingIndicator.scaleY = LayoutManager.intScaleY;
-//						this.stage.addChild(loadingIndicator);
-//	
-//						var pageSubjectView : PageSubjectView = content as PageSubjectView;
-//						pageSubjectView.webView.addEventListener("WebViewStatusEvent.START_LOAD", function(event : WebViewNativeExtensionEvent)
-//						{
-//							
-//						});
-//						pageSubjectView.webView.addEventListener("WebViewStatusEvent.FINISH_LOAD", function(event : WebViewNativeExtensionEvent)
-//						{
-//							// Hide Loading Indicator
-//							loadingIndicator.stopAnim();
-//							this.stage.removeChild(loadingIndicator);
-//						});
-//						pageSubjectView.webView.addEventListener("WebViewStatusEvent.ERROR", function(event : WebViewNativeExtensionEvent)
-//						{
-//							loadingIndicator.stopAnim();
-//							this.stage.removeChild(loadingIndicator);
-//						});
-//						pageSubjectView.webView.addEventListener("WebViewStatusEvent.LOCATION_CHANGED", function(event : WebViewNativeExtensionEvent)
-//						{
-//							var strLocation : String = event.strURL;
-//							var intLength : int = pageSubjectView.strIdentifierLink.length;
-//							if (strLocation.substring(0, intLength) == pageSubjectView.strIdentifierLink)
-//							{
-//								try
-//								{
-//									var intIndex : int = parseInt(strLocation.substring(intLength));
-//									var dicData : Object = pageSubjectView.getDicData(intIndex);
-//									var request : URLRequest = new URLRequest(dicData.video);
-//									navigateToURL(request, "_blank");
-//									pageSubjectView.loadData();
-//								}
-//								catch (error : Error)
-//								{
-//									pageSubjectView.webView.webViewLoadString(error.message + "<br />" + error.getStackTrace().replace("\n", "<br />"), "file:///");
-//								}
-//							}
-//						});
-//						
-//						var intWidthHTML : int = (LayoutManager.intScreenWidth - convertToScaledLength(4));
-//						var strStyleSheet : String = "\t<style type='text/css'>\n";
-//							strStyleSheet += "\t\ta { text-decoration: none; color: black; }\n";
-//							strStyleSheet += "\t\tbody { margin: 0px; background-image: url('" + fileCache1.toString() + "'); background-repeat: repeat-y; background-size: contain; width: " + (intWidthHTML).toString() + "px; }\n";
-//							strStyleSheet += "\t\ttable { width: " + (intWidthHTML).toString() + "px; border-spacing: " + convertToScaledLength(27) + "px; }\n";
-//							strStyleSheet += "\t\ttr { height: " + convertToScaledLength(223) + "px; }\n";
-//							strStyleSheet += "\t\ttd { width: " + convertToScaledLength(249) + "px; height: " + convertToScaledLength(223) + "px; }\n";
-//							strStyleSheet += "\t\tdiv.title { background-color: black; opacity: 0.66; font: " + convertToScaledLength(24) + "px \"微軟正黑體\"; text-align: center; width: " + convertToScaledLength(219) + "px; height: " + convertToScaledLength(52) + "px; line-height: " + convertToScaledLength(52) + "px; vertical-align: middle; margin: " + convertToScaledLength(114) + " 0 " + convertToScaledLength(-114) + " 0; color: white; overflow: hidden; }\n";
-//							strStyleSheet += "\t\tdiv.imageOuter { width: " + convertToScaledLength(249) + "px; height: " + convertToScaledLength(223) + "px; border: solid 1px transparent; background-image: url('" + fileCache2.toString() + "'); background-repeat: no-repeat; background-position: center center;  background-size: cover; }";
-//							strStyleSheet += "\t\tdiv.left { margin: auto 0 auto 22; }\n";
-//							strStyleSheet += "\t\tdiv.right { margin: auto 22 auto 0; }\n";
-//							strStyleSheet += "\t\tdiv.imageInner { width: " + convertToScaledLength(219) + "px; height: " + convertToScaledLength(165) + "px; margin: " + convertToScaledLength(29) + " " + convertToScaledLength(15) + " " + convertToScaledLength(-19) + " " + convertToScaledLength(15) + "; overflow: hidden; background-repeat: no-repeat; background-position: center; background-size: cover; }";
-//							strStyleSheet += "\t</style>\n";
-//							
-//						var intWebViewY : int = navigator.getTitleBarHeight();
-//						var intWebViewWidth : int = LayoutManager.intScreenWidth;
-//						var intWebViewHeight : int = LayoutManager.intScreenHeight - intWebViewY;
-//	
-//						pageSubjectView.webView.setWebViewFrame(0, intWebViewY, intWebViewWidth, intWebViewHeight);
-//						pageSubjectView.strHTMLStyleSheet = strStyleSheet;
-//						pageSubjectView.strHTMLViewPortWidth = (LayoutManager.intScreenWidth).toString();
-//						if (Capabilities.os.indexOf("iPhone") != -1) 
-//						{
-//							pageSubjectView.strHTMLViewPortInitialScale = ((pageSubjectView.webView.isRetinaDisplay()) ? ("0.5") : ("1.0"));
-//							pageSubjectView.strHTMLViewPortMaximumScale = ((pageSubjectView.webView.isRetinaDisplay()) ? ("0.5") : ("1.0"));
-//						}
-//						// 2014-02-18 Noin: 設定使用 150x150 縮圖
-//						pageSubjectView.isThumbnailAvailable = true;
-//						pageSubjectView.funcOnItemBinding = pageSubjectViewOnItemBinding;
-//	
-//						pageSubjectView.loadData();
-//					}
-//				};
-//				setupNavigator(dicContentParameter);
-//			} // END of CAMEO::ANE
-//		}
+
 		
 		CAMEO::ANE {
 			private function pageSubjectViewOnItemBinding(pageSubjectView : PageSubjectView, dicData : Object, i : int) : String
@@ -1123,13 +824,16 @@ catch (error : Error)
 					else titleButtonBackHandler();
 					//((strViewModeIn == "LIST_VIEW") ? (titleButtonHomeHandler()) : (titleButtonBackHandler()));  //201400422 roy
 				},
-				rightButton: ((strViewModeIn == "LIST_VIEW") ? (TitleBarAndSideMenu.TITLE_BUTTON_CALENDARVIEW) : (((strViewModeIn == "CALENDAR_VIEW") ? (TitleBarAndSideMenu.TITLE_BUTTON_LISTVIEW) : (null)) )) ,			
-				rightButtonOnMouseClick: function() : void
-				{
-					intArrayIndexSelected.length = 0; //Clear Array
-					if(strViewModeIn == "LIST_VIEW") eventChannel.writeEvent(new Event(PageCalendar.CLICK_CALENDARVIEW));
-					if(strViewModeIn == "CALENDAR_VIEW") titleButtonBackHandler();
-				},
+				//20150815 roy update: 苗栗版不顯示行事曆按鈕
+				rightButton: TitleBarAndSideMenu.TITLE_BUTTON_TYPE_NONE,
+				rightButtonOnMouseClick: null,
+//				rightButton: ((strViewModeIn == "LIST_VIEW") ? (TitleBarAndSideMenu.TITLE_BUTTON_CALENDARVIEW) : (((strViewModeIn == "CALENDAR_VIEW") ? (TitleBarAndSideMenu.TITLE_BUTTON_LISTVIEW) : (null)) )) ,			
+//				rightButtonOnMouseClick: function() : void
+//				{
+//					intArrayIndexSelected.length = 0; //Clear Array
+//					if(strViewModeIn == "LIST_VIEW") eventChannel.writeEvent(new Event(PageCalendar.CLICK_CALENDARVIEW));
+//					if(strViewModeIn == "CALENDAR_VIEW") titleButtonBackHandler();
+//				},
 				lstStrSideMenuItem: null,
 				intIndexDefaultSideMenuItem: -1,
 				sideMenuOnClose: null,

@@ -56,8 +56,6 @@
     </iPhone>
   <extensions>
     <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
-    <extensionID>tw.cameo.pushnotification</extensionID>
-    <extensionID>tw.cameo.imagehandler</extensionID>
     <extensionID>tw.cameo.lib.CameoNativeExtension</extensionID>
   </extensions>
 </application>
