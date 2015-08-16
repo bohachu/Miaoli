@@ -1,1 +1,1 @@
-call "D:\Resource\AdobeAIRSDK 17 17.0.0.138\bin\adt" -package -target apk-captive-runtime -storetype pkcs12 -keystore ../androidFlash.p12 -storepass 123456 Miaoli_v1.0.0.0815.apk Main-app-android.xml -extdir C:/github/flashCommon/ane/Android/ Main.swf icons
+call "D:\Resource\AdobeAIRSDK 17 17.0.0.138\bin\adt" -package -target apk-captive-runtime -storetype pkcs12 -keystore ../androidFlash.p12 -storepass 123456 Miaoli_v1.0.0.0816.apk Main-app-android.xml -extdir C:/github/flashCommon/ane/Android/ Main.swf icons

@@ -35,6 +35,6 @@
   </android>
   <extensions>
     <extensionID>tw.cameo.lib.WebViewNativeExtension</extensionID>
-    <extensionID>com.cameo.flash2videoext</extensionID>
+    <extensionID>tw.cameo.lib.CameoNativeExtension</extensionID>
   </extensions>
 </application>
